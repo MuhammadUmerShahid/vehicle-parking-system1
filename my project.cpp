@@ -37,6 +37,7 @@ public:
 		else if (input == 2){
 			if (count <= 100)
 			{
+
 				_cycle++;
 				amount = amount + 10;
 				count = count + 1;
@@ -226,9 +227,7 @@ public:
 			cout << "    THE END \n    ********\n    GOOD BYE\n";
 			exit(0);
 		}
-		else{
-			cout << "input invalid number\n";
-		}
+		
 	}
 };
 int main(){
