@@ -8,12 +8,12 @@ public:
 public:
 	void menu(){
 		cout << "press 1 to see the normal parking charges\n";
-		cout << "press 2 for add cycle \t    press 11 for remove cycle\n";
-		cout << "press 3 for add bike \t    press 33 for remove bike\n";
-		cout << "press 4 for add rickshaw    press 44 for remove rickshaw\n";
-		cout << "press 5 for add car \t    press 55 for remove car\n";
-		cout << "press 6 for add bus \t    press 66 for remove bus\n";
-		cout << "press 7 for truck \t    press 77 for remove truck\n";
+		cout << "press 2 for add cycle \t    press 22 to remove cycle\n";
+		cout << "press 3 for add bike \t    press 33 to remove bike\n";
+		cout << "press 4 for add rickshaw    press 44 to remove rickshaw\n";
+		cout << "press 5 for add car \t    press 55 to remove car\n";
+		cout << "press 6 for add bus \t    press 66 to remove bus\n";
+		cout << "press 7 for truck \t    press 77 to remove truck\n";
 		cout << "press 8 to show the record\n";
 		cout << "press 9 to delete the record\n";
 		cout << "press 0 to EXIT the program\n";
@@ -114,7 +114,7 @@ public:
 			if (count <= 100)
 			{
 				_cycle--;
-			//	amount = amount - 10;
+				amount = amount - 10;
 				count = count - 1;
 			}
 			else
@@ -126,7 +126,7 @@ public:
 			if (count <= 100)
 			{
 				_bike--;
-			//	amount = amount - 20;
+				amount = amount - 20;
 				count = count - 1;
 			}
 			else
@@ -138,7 +138,7 @@ public:
 			if (count <= 100)
 			{
 				_rickshaw--;
-			//	amount = amount - 30;
+				amount = amount - 30;
 				count = count - 1;
 			}
 			else{
@@ -149,7 +149,7 @@ public:
 			if (count <= 100)
 			{
 				_car--;
-			//	amount = amount - 50;
+				amount = amount - 50;
 				count = count - 1;
 			}
 			else
@@ -161,7 +161,7 @@ public:
 			if (count <= 100)
 			{
 				_bus--;
-			//	amount = amount - 80;
+				amount = amount - 80;
 				count = count - 1;
 			}
 			else
@@ -173,7 +173,7 @@ public:
 			if (count <= 100)
 			{
 				_truck--;
-			//	amount = amount - 100;
+				amount = amount - 100;
 				count = count - 1;
 			}
 			else
@@ -226,9 +226,9 @@ public:
 			cout << "    THE END \n    ********\n    GOOD BYE\n";
 			exit(0);
 		}
-	//	else{
-	//		cout << "input invalid number\n";
-	//	}
+		else{
+			cout << "input invalid number\n";
+		}
 	}
 };
 int main(){
